@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Temperature Converter</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<main class="container">
+  <header>
+    <h1>Temperature Converter</h1>
+    <p class="lead">Convert Celsius, Fahrenheit, and Kelvin instantly!</p>
+    <button id="themeToggle" class="btn ghost"><i class="fas fa-moon"></i> Toggle Theme</button>
+  </header>
+
+  <section class="card">
+    <label for="inputValue">Enter Value <i class="fas fa-thermometer-half"></i></label>
+    <input id="inputValue" type="number" placeholder="e.g., 36.6" />
+
+    <div class="row">
+      <div class="col">
+        <label for="fromUnit">From <i class="fas fa-temperature-high"></i></label>
+        <select id="fromUnit">
+          <option value="c">Celsius (°C)</option>
+          <option value="f">Fahrenheit (°F)</option>
+          <option value="k">Kelvin (K)</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="toUnit">To <i class="fas fa-temperature-low"></i></label>
+        <select id="toUnit">
+          <option value="f">Fahrenheit (°F)</option>
+          <option value="c">Celsius (°C)</option>
+          <option value="k">Kelvin (K)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="swapBtn" class="btn outline"><i class="fas fa-exchange-alt"></i> Swap Units</button>
+      <button id="clearBtn" class="btn ghost"><i class="fas fa-trash"></i> Clear</button>
+    </div>
+
+    <div id="result" class="result"><i class="fas fa-info-circle"></i> Result will appear here</div>
+    <button id="copyBtn" class="btn ghost"><i class="fas fa-copy"></i> Copy Result</button>
+
+  </section>
+</main>
+
+
+<script src="index.js"></script>
+</body>
+</html>
